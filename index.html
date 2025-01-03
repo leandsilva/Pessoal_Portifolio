@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- API - Fonte: Nunito -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style/style.css">
+    <title>LS Portifólio</title>
+</head>
+
+<body>
+	<header>
+        <p class="tittle" id="tittle">Portifó<span>l</span>io.</p>
+        <!-- ID 'trilho' necessário para interação no JavaScript -->
+        <div class="trilho" id="trilho">
+            <div class="trilho_indicator"></div>
+        </div>
+    </header>
+
+	<main>
+		<div class="container_principal">
+            <img src="photolight.png" alt="Foto do autor feita por IA e editada por Adobe Photoshop CS 2022" class="container_photo">
+            <div class="container_text">
+                <h1>Olá, eu sou o Leandro, estudante apaixonado por <span id="front">front-end</span></h1>
+                <p id="text">Faço tecnólogo em Análise e Desenvolvimento de Sistemas, e ainda estudo nas<br> mais conhecidas plataformas como Alura, Udemy, Curso em Vídeo, e muito mais.<br> Conheço HTML, CSS, JavaScript, SEO, Metodologias Ágeis e estou me aprofundando em TypeScript e React.</p>
+                <div>
+                    <a href="https://drive.google.com/file/d/100-aHpKfzPwJ019Jyvy_irGAF7M1nfWE/view"><button id="btn">Download CV</button></a>
+                    <a href="/"><button id="btn2">Contato</button></a> <!-- verificar se tem como melhorar isso -->
+                </div>
+            </div>
+        </div>
+	</main>
+
+    <!-- Seção Conhecimento -->
+    <section class="knowledge">
+        <div class="knowledge__tittle">
+            <h2>Tecnologias</h2>
+            <p id="subtittle">Em constante desenvolvimento</p>
+        </div>
+        <div class="knowledge__cards">
+            <div class="cards_container_one">
+                <div class="cards">
+                    <div class="simbols">
+                        <img src="./img/html.png" alt="HTML">
+                    </div>
+                    <h3>HTML</h3>
+                    <p>Linguagem de marcação</p>
+                </div>
+                <div class="cards">
+                    <div class="simbols">
+                        <img src="./img/css.png" alt="CSS">
+                    </div>
+                    <h3>CSS</h3>
+                    <p>Linguagem de estilização</p>
+                </div>
+                <div class="cards">
+                    <div class="simbols">
+                        <img src="./img/JavaScript.png" alt="JavaScript">
+                    </div>
+                    <h3>JavaScript</h3>
+                    <p>Linguagem de Programação</p>
+                </div>
+           </div>
+            <div class="cards_container_two">
+                <div class="cards">
+                    <div class="simbols">
+                        <img src="./img/typescript.png" alt="TypeScript">
+                    </div>
+                    <h3>TypeScript</h3>
+                    <p>Linguagem de Programação</p>
+                </div>
+                <div class="cards">
+                    <div class="simbols">
+                        <img src="./img/react.png" alt="React">
+                    </div>
+                    <h3>React</h3>
+                    <p>Biblioteca de JavaScript</p>
+                </div>
+                <div class="cards">
+                    <div class="simbols">
+                        <img src="./img/bootstrap.png" alt="Bootstrap">
+                    </div>
+                    <h3>Bootstrap</h3>
+                    <p>Biblioteca para aplicações Web</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Projetos -->
+    <section class="projects">
+        <h2>Projetos Destaque</h2>        
+        <div class="slider">
+            <div class="item">
+                <h3>Projeto futuro</h3>
+                <p>Em breve novos projetos estarão aqui, com uso de React, Bootstrap e muito mais!</p>
+            </div>
+            <div class="item">
+                <h3>Projeto futuro</h3>
+                <p>Em breve novos projetos estarão aqui, com uso de React, Bootstrap e muito mais!</p>
+            </div>
+            <div class="item">
+                <img src="./img/diveclub.png" alt="Imagem do site feito pelo autor" width="550" class="pages" link="#">
+                <h3>DiveClub</h3>
+                <div class="teste">
+                    <div class="usadas">
+                        <img src="./img/html.png" alt="Símbolo HTML" class="technologies">
+                    </div>
+                    <div class="usadas">
+                        <img src="./img/css.png" alt="Símbolo CSS" class="technologies">
+                    </div>
+                </div>
+                <p>Página inspirada no Design de Samuel Scalzo, com suporte do Adobe Photoshop CS e sem utilziação do Figma.</p>
+            </div>
+            <div class="item">
+                <img src="./img/7daysofcode.png" alt="Imagem do site feito pelo autor" width="550" class="pages" link="#">
+                <h3>7 Days of Code</h3>
+                <div class="teste">
+                    <div class="usadas">
+                        <img src="./img/html.png" alt="Símbolo HTML" class="technologies">
+                    </div>
+                    <div class="usadas">
+                        <img src="./img/css.png" alt="Símbolo CSS" class="technologies">
+                    </div>
+                </div>
+                <p>Projeto feito em curso Alura, utilizando técnicas de Flexbox e código semântico.</p>
+            </div>
+            <div class="item">
+                <img src="./img/numerosecreto2.png" alt="Imagem do site feito pelo autor" width="550" class="pages" link="https://jogocomvoice.vercel.app/">
+                <h3>Jogo do Número Secreto</h3>
+                <div class="teste">
+                    <div class="usadas">
+                        <img src="./img/html.png" alt="Símbolo HTML" class="technologies">
+                    </div>
+                    <div class="usadas">
+                        <img src="./img/JavaScript.png" alt="Símbolo JavaScript" class="technologies">
+                    </div>
+                    <div class="usadas">
+                        <img src="./img/css.png" alt="Símbolo CSS" class="technologies">
+                    </div>
+                </div>
+                <p>Jogo de adivinhação focado em JavaScript com técnicas de acessibilidade: o jogo conta com suporte de voz aos participantes. Projeto feito durante curso Alura.</p>
+            </div>
+            <div class="item">
+                <img src="./img/formlol.png" alt="Imagem do site feito pelo autor" width="550" class="pages" link="https://pessoal-form-leagueoflegends.vercel.app/">
+                <h3>Form League of Legends</h3>
+                <div class="teste">
+                    <div class="usadas">
+                        <img src="./img/html.png" alt="Símbolo HTML" class="technologies">
+                    </div>
+                    <div class="usadas">
+                        <img src="./img/css.png" alt="Símbolo CSS" class="technologies">
+                    </div>
+                </div>
+                <p>Formulário feito com base no Design da artista Iryna, usando Adobe Photoshop CS, sem auxílio do Figma.</p>
+            </div>
+            <div class="item">
+                <h3>Projeto futuro</h3>
+                <p>Em breve novos projetos estarão aqui, com uso de React, Bootstrap e muito mais!</p>
+            </div>
+            <div class="item">
+                <h3>Projeto futuro</h3>
+                <p>Em breve novos projetos estarão aqui, com uso de React, Bootstrap e muito mais!</p>
+            </div>
+            <button id="next">></button>
+            <button id="prev"><</button>
+        </div>
+        <p id="final_text">É possível acessar o repositório desses e de outros projetos por meio do <a href="https://github.com/leandsilva" id="git">GitHub</a>.</p>
+    </section>
+    
+
+
+
+    <section class="depoiments">
+        <h2>Depoimentos</h2>
+        <div class="depoiments_cards">
+            <div class="depoiments_cards_first">
+                <img src="./img/avatar.jpeg" alt="Avatar" id="avatar">
+                <hr>
+                <h3 class="depoiments_cards_tittle">Leandro Silva</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut error architecto debitis ipsam provident hic reprehenderit nisi perspiciatis molestiae exercitationem quibusdam alias illo impedit cupiditate itaque eveniet, id nemo distinctio?</p>
+            </div>
+            <div class="depoiments_cards_first" id="second">
+                <img src="./img/avatar.jpeg" alt="Avatar" id="avatar">
+                <hr>
+                <h3 class="depoiments_cards_tittle">Nome da pessoa</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut error architecto debitis ipsam provident hic reprehenderit nisi perspiciatis molestiae exercitationem quibusdam alias illo impedit cupiditate itaque eveniet, id nemo distinctio?</p>
+            </div>
+            <div class="depoiments_cards_first">
+                <img src="./img/avatar.jpeg" alt="Avatar" id="avatar">
+                <hr>
+                <h3 class="depoiments_cards_tittle">Nome da pessoa</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut error architecto debitis ipsam provident hic reprehenderit nisi perspiciatis molestiae exercitationem quibusdam alias illo impedit cupiditate itaque eveniet, id nemo distinctio?</p>
+            </div>
+            <div class="depoiments_cards_first" id="fourth">
+                <img src="./img/avatar.jpeg" alt="Avatar" id="avatar">
+                <hr>
+                <h3 class="depoiments_cards_tittle">Nome da pessoa</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut error architecto debitis ipsam provident hic reprehenderit nisi perspiciatis molestiae exercitationem quibusdam alias illo impedit cupiditate itaque eveniet, id nemo distinctio?</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+<footer>
+    <a href="https://www.linkedin.com/in/contatolspro/" target="_blank"><img src="./img/linkedin.png" alt="Logo do Linkedin" width="30px" height="30px"></a>
+    <a href="https://github.com/leandsilva?tab=repositories" target="_blank"><img src="./img/git.png" alt="Logo do GitHub" width="30px" height="30px"></a>
+    <p>Página desenvolvida pelo autor com propósito de exibição do trabalho para potenciais recrutadores técnicos da área de Tecnologia da Informação, com foco em Desenvolvimento Web Front-End. O design foi inspirado no trabalho de Masuder Rahaman, a fotografia do autor foi feita por meio de Inteligencia Artificial e todas as imagens que contém na página foram disponibilizadas pelo Google.com.</p>
+</footer> 
+
+</html>
