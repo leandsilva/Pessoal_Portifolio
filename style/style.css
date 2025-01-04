@@ -372,7 +372,6 @@ h2 {
     background-image: linear-gradient(
       to right,
       #667eea,
-      /* #764ba2, */
       #6b8dd6,
       #8e37d7
     );
@@ -389,10 +388,20 @@ h2 {
     color: var(--primeira-cor);
 }
 
+.item.dark h3,
+.item.dark p {
+    color: var(--cor-principal);
+}
+
 .item p {
     font-size: 1rem;
     padding-top: 0.4rem;
     color: var(--primeira-cor);
+}
+
+.item.dark {
+    background-color: #f0eeee77;
+    
 }
 
 #next, #prev{

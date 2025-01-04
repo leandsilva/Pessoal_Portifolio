@@ -11,6 +11,7 @@ let text = document.getElementById('text');
 let subtittle = document.getElementById('subtittle');
 let final = document.getElementById('final_text');
 let usad = document.getElementsByClassName('usadas');
+let item = document.getElementsByClassName('item');
 
 trilho.addEventListener('click', ()=>(
   trilho.classList.toggle('dark')
@@ -66,6 +67,18 @@ trilho.addEventListener('click', ()=>{
   usad[6].classList.toggle('dark');
   usad[7].classList.toggle('dark');
   usad[8].classList.toggle('dark');
+})
+
+trilho.addEventListener('click', ()=>{
+  item[0].classList.toggle('dark');
+  item[1].classList.toggle('dark');
+  item[2].classList.toggle('dark');
+  item[3].classList.toggle('dark');
+  item[4].classList.toggle('dark');
+  item[5].classList.toggle('dark');
+  item[6].classList.toggle('dark');
+  item[7].classList.toggle('dark');
+  item[8].classList.toggle('dark');
 })
 
 
