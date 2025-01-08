@@ -273,7 +273,7 @@ h2 {
     text-align: center;
 }
 
-.cards.dark p { /* teste */
+.cards.dark p {
     color: var(--cor-principal);
 }
 
@@ -323,14 +323,14 @@ h2 {
     padding-bottom: 4rem;
 }
 
-.teste {
+.technologies_used {
     display: flex;
     justify-content: center;
     margin: 1rem;
     gap: 1rem;
 }
 
-.usadas {
+.technologies_used_simbols {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -346,7 +346,7 @@ h2 {
     border-radius: 50%;
 }
 
-.usadas.dark {
+.technologies_used_simbols.dark {
     background-image: linear-gradient(
       to right,
       #667eea,
@@ -368,6 +368,7 @@ h2 {
 
 .item.dark h3,
 .item.dark p {
+    font-weight: 600;
     color: var(--cor-principal);
 }
 
@@ -385,7 +386,7 @@ h2 {
 
 #next, #prev {
     position: absolute;
-    top: 90%; /*40%*/
+    top: 90%;
     color: var(--decima-segunda-cor);
     background-color: transparent;
     border: none;
@@ -393,7 +394,6 @@ h2 {
     font-family: monospace;
     font-weight: bold;
     left: 10%
-    /*left: 10px; /*400%*/
 }
 
 #next{
@@ -443,7 +443,7 @@ h2 {
     gap: 6rem;
 }
 
-.depoiments_cards_first {
+.depoiments_cards_unitary {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -454,7 +454,7 @@ h2 {
     box-shadow: 1px 1px 15px var(--decima-segunda-cor);
 }
 
-#avatar {
+.avatar {
     position: relative;
     top: -50px;
     width: 140px;
@@ -464,7 +464,7 @@ h2 {
     border: 1px solid var(--primeira-cor);
 }
 
-#avatar:hover {
+.avatar:hover {
     scale: calc(1.1);
     transition: 0.5s;
 }
@@ -475,12 +475,12 @@ hr {
     top: -40px;
 }
 
-.depoiments_cards_tittle {
+.depoiments_cards_unitary h3 {
     font-size: 17px;
     font-weight: 700;
 }
 
-.depoiments_cards_first p {
+.depoiments_cards_unitary p {
     text-align: center;
     font-size: 14px;
     padding: 1rem 2rem;
@@ -506,7 +506,13 @@ footer p {
 }
 
 footer img {
+    width: 30px;
+    height: 30px;
     margin: 3rem 1rem 1rem 1rem;
+}
+
+a {
+    text-decoration: none;
 }
 
 @media screen and (min-width: 1920px) {
@@ -551,7 +557,7 @@ footer img {
     
     /* Knowledge */
     
-    .knowledge h2 { /* verificar mobile */
+    .knowledge h2 {
         font-size: 4.5rem;
     }
 
@@ -630,7 +636,7 @@ footer img {
         top: 40px;
     }
     
-    #avatar {
+    .avatar {
         top: -60px;
         width: 120px;
         height: 120px;

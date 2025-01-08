@@ -1,16 +1,15 @@
 
 let trilho = document.getElementById('trilho');
 let body = document.querySelector('body');
-let button = document.getElementById('btn');
-let buttonSecond = document.getElementById('btn2');
-let l = document.querySelector('span');
-let front = document.getElementById('front');
-let cards = document.querySelector('cards');
-let tittle = document.getElementById('tittle');
-let text = document.getElementById('text');
-let subtittle = document.getElementById('subtittle');
-let final = document.getElementById('final_text');
-let usad = document.getElementsByClassName('usadas');
+let button = document.getElementById('btn'); //botão de download do curriculo
+let buttonSecond = document.getElementById('btn2'); //botão de entrar em contato
+let letter = document.querySelector('span'); //letra L do título inicial
+let front = document.getElementById('front'); //palavra front-end
+let tittle = document.getElementById('tittle'); //título inicial
+let text = document.getElementById('text'); //texto da main section
+let subtittle = document.getElementById('subtittle'); //subtítulo da seção de tecnologia
+let final = document.getElementById('final_text'); //texto final da seção de projetos
+let tecnologiesUsed = document.getElementsByClassName('technologies_used_simbols'); //símbolo das tecnologias na seção projetos
 let item = document.getElementsByClassName('item');
 
 trilho.addEventListener('click', ()=>(
@@ -30,15 +29,11 @@ trilho.addEventListener('click', ()=>{
 })
 
 trilho.addEventListener('click', ()=>{
-  l.classList.toggle('dark');
+  letter.classList.toggle('dark');
 })
 
 trilho.addEventListener('click', ()=>{
   front.classList.toggle('dark');
-})
-
-trilho.addEventListener('click', ()=>{
-  cards.classList.toggle('dark');
 })
 
 trilho.addEventListener('click', ()=>{
@@ -58,15 +53,15 @@ trilho.addEventListener('click', ()=>{
 })
 
 trilho.addEventListener('click', ()=>{
-  usad[0].classList.toggle('dark');
-  usad[1].classList.toggle('dark');
-  usad[2].classList.toggle('dark');
-  usad[3].classList.toggle('dark');
-  usad[4].classList.toggle('dark');
-  usad[5].classList.toggle('dark');
-  usad[6].classList.toggle('dark');
-  usad[7].classList.toggle('dark');
-  usad[8].classList.toggle('dark');
+  tecnologiesUsed[0].classList.toggle('dark');
+  tecnologiesUsed[1].classList.toggle('dark');
+  tecnologiesUsed[2].classList.toggle('dark');
+  tecnologiesUsed[3].classList.toggle('dark');
+  tecnologiesUsed[4].classList.toggle('dark');
+  tecnologiesUsed[5].classList.toggle('dark');
+  tecnologiesUsed[6].classList.toggle('dark');
+  tecnologiesUsed[7].classList.toggle('dark');
+  tecnologiesUsed[8].classList.toggle('dark');
 })
 
 trilho.addEventListener('click', ()=>{
@@ -81,13 +76,13 @@ trilho.addEventListener('click', ()=>{
   item[8].classList.toggle('dark');
 })
 
-
+// Slides dos Projetos
 
 let items = document.querySelectorAll('.slider .item');
 let next = document.getElementById('next');
 let prev = document.getElementById('prev');
   
-let active = 3;
+let active = 0;
 function loadShow(){
     let stt = 0;
     items[active].style.transform = `none`;
@@ -112,26 +107,10 @@ function loadShow(){
 }
 loadShow();
 next.onclick = function(){
-    active = active + 1 < items.length ? active + 1 : active;
+    active = (active + 1) % items.length
     loadShow();
 }
 prev.onclick = function(){
-    active = active - 1 >= 0 ? active - 1 : active;
+    active = (active - 1 + items.length) % items.length;
     loadShow();
 }
-
-
-
-
-// Trocar foto com click //
-
-//let photo = document.getElementById('photo');
-//let imagemAtual = 'photodark.png';
-//let imagemAnterior = 'photolight.png';
-
-/* function trocar(){
-  document.getElementById('photo').src = imagemAtual;
-  let aux = imagemAtual;
-  imagemAtual = imagemAnterior;
-  imagemAnterior = aux;
-} */
