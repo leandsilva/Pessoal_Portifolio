@@ -1,0 +1,417 @@
+@media screen and (min-width: 1920px) {
+ 
+    main {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border: 1px solid red;
+    }
+
+    .main_text {
+        line-height: 1.5rem;
+    }
+
+    main h1 {
+        font-size: 1.5rem;
+    }
+
+    br {
+        
+    }
+
+    .main img {
+        width: 32rem;
+        height: 45rem;
+        margin: 3rem;
+        margin: 6rem 2rem 0 0;
+    }
+    
+    h2 {
+        font-size: 3.5rem;
+        padding-top: 4rem;
+    }
+
+    #subtittle {
+        font-size: 1.5rem;
+    }
+    
+}
+
+/* Knowledge */
+
+.knowledge__cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10rem;
+    padding: 3rem;
+    gap: 6rem;
+    flex-wrap: wrap;
+}
+
+#ts, #rea, #bs {
+    filter: blur(3px);
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 250px;
+    background-color: var(--oitava-cor);
+    border-radius: 1.7rem;
+    gap: 0.8rem;
+}
+
+.cards:hover {
+    scale: calc(1.1);
+    transition: 0.5s;
+}
+
+.cards h3 {
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.cards.dark p { /* teste */
+    color: var(--cor-principal);
+}
+
+.simbols {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 58px;
+    height: 58px;
+    background-color: var(--nona-cor);
+    border-radius: 16px;
+}
+
+/* Seção Projects */
+
+.projects {
+    margin-top: 3rem;
+    background-color: var(--quinta-cor)
+}
+
+.projects, h2 {
+    text-align: center;
+}
+
+/* Seção Projects - Slider */
+
+.slider {
+    position: relative;
+    margin-top: 10rem;
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+}
+
+.item {
+    position: absolute;
+    width: 600px;
+    height: 520px;
+    text-align: center;
+    background-color: var(--decima-cor);
+    border-radius: 10px;
+    padding: 20px;
+    transition: 0.5s;
+    left: calc(50% - 300px);
+    top: 0;
+    border: 1px solid var(--decima-primeira-cor);
+}
+
+.pages {
+    border-radius: 5px;
+    padding-bottom: 1rem;
+}
+
+.teste {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    gap: 1rem;
+}
+
+.usadas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+    background-image: linear-gradient(
+        to right,
+        #ff9a44,
+        #ef9d43,
+        #e75516
+      );
+      box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
+    border-radius: 50%;
+}
+
+/* resolver isso */
+.usadas.dark {
+    background-image: linear-gradient(
+      to right,
+      #667eea,
+      #6b8dd6,
+      #8e37d7
+    );
+    box-shadow: 0 4px 15px 0 #8e37d7;
+}
+
+.technologies {
+    scale: calc(-0.7);
+}
+
+.item h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primeira-cor);
+}
+
+.item.dark h3,
+.item.dark p {
+    color: var(--cor-principal);
+}
+
+.item p {
+    font-size: 1rem;
+    padding-top: 0.4rem;
+    color: var(--primeira-cor);
+}
+
+.item.dark {
+    background-color: #f0eeee77;
+    
+}
+
+#next, #prev{
+    position: absolute;
+    top: 40%;
+    color: var(--decima-segunda-cor);
+    background-color: transparent;
+    border: none;
+    font-size: xxx-large;
+    font-family: monospace;
+    font-weight: bold;
+    left: 400px;
+}
+
+#next{
+    left: unset;
+    right: 400px;
+}
+
+#next, #prev:hover {
+    cursor: pointer;
+}
+
+#final_text {
+    text-align: center;
+    position: relative;
+    font-weight: 600;
+    top: -100px;
+}
+
+#final_text.dark {
+    color: var(--primeira-cor);
+}
+
+#git {
+    text-decoration: none;
+    color: inherit;
+}
+
+#git:hover {
+    font-size: larger;
+    transition: 0.5s;
+}
+
+.depoiments {
+    height: 800px;
+}
+
+.depoiments h1 {
+    text-align: center;
+}
+
+.depoiments_cards {
+    display: flex;
+    justify-content: center;
+    padding-top: 6rem;
+    gap: 4rem;
+}
+
+.depoiments_cards_first {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 400px;
+    border-radius: 16px;
+    background-color: var(--oitava-cor);
+    box-shadow: 1px 1px 15px var(--decima-segunda-cor);
+}
+
+#second, #fourth {
+    position: relative;
+    top: 40px;
+}
+
+#avatar {
+    position: relative;
+    top: -90px;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 1px solid var(--primeira-cor);
+}
+
+#avatar:hover {
+    scale: calc(1.1);
+    transition: 0.5s;
+}
+
+hr {
+    width: 40px;
+    position: relative;
+    top: -40px;
+}
+
+.depoiments_cards_tittle {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.depoiments_cards_first p {
+    text-align: center;
+    font-size: 14px;
+    padding: 1rem 2rem;
+}
+
+footer {
+    display: block;
+    justify-items: center;
+    height: 200px;
+    background-color: var(--decima-cor);
+}
+
+footer p {
+    text-align: center;
+    padding: 0.5rem 0 1.5rem 0;
+    margin: 0 auto;
+    width: 50%;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--primeira-cor);
+}
+
+footer img {
+    margin: 3rem 1rem 1rem 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*
+    main {
+        display: block;
+        width: 320px;
+        height: 40rem;
+    }
+
+    .container_principal {
+        display: block;
+        width: 100%;
+        height: 600px;
+    }
+
+    .container_photo {
+        scale: calc(0.5);
+        position: relative;
+        top: 10px;
+        left: -70px;
+    }
+    
+    .container_text {
+        position: relative;
+        top: -800px;
+        font-size: 0.8rem;
+    }
+    
+    #btn {
+        scale: calc(0.7);
+        gap: 5px;
+        position: relative;
+        top: 60px;
+        left: -60px;
+    }
+
+    #btn2 {
+        scale: calc(0.7);
+        gap: 5px;
+        position: relative;
+        top: 30px;
+        left: -60px;
+    }
+
+    /* knowledge
+
+    .knowledge {
+        width: 320px;
+        text-align: center;
+    }
+    
+    h2 {
+        font-size: 2.5rem;
+        padding-top: 2rem;
+    }
+    
+    .knowledge__tittle p {
+        font-size: 1.5rem;
+    }
+
+    .knowledge__cards {
+        scale: calc(0.4);
+    }
+
+    .cards_container_one, .cards_container_two {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 50px;
+    }*/
+}
