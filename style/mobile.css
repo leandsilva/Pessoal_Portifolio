@@ -448,7 +448,7 @@ h2 {
     flex-direction: column;
     align-items: center;
     width: 300px;
-    height: 400px;
+    height: 570px;
     border-radius: 16px;
     background-color: var(--oitava-cor);
     box-shadow: 1px 1px 15px var(--decima-segunda-cor);
@@ -456,12 +456,11 @@ h2 {
 
 .avatar {
     position: relative;
-    top: -50px;
-    width: 140px;
-    height: 140px;
+    top: -40px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
-    margin-bottom: 1rem;
-    border: 1px solid var(--primeira-cor);
+    border: 2px solid var(--primeira-cor);
 }
 
 .avatar:hover {
@@ -469,22 +468,34 @@ h2 {
     transition: 0.5s;
 }
 
-hr {
-    width: 40px;
-    position: relative;
-    top: -40px;
-}
-
 .depoiments_cards_unitary h3 {
     font-size: 17px;
     font-weight: 700;
 }
 
+.depoiments_cards_unitary h4 {
+    font-size: .8rem;
+    font-weight: 500;
+    margin-top: 0.4rem;
+}
+
+.redes {
+    width: 30px;
+    height: 30px;
+    padding-bottom: 1rem;
+}
+
+.depoiments_cards_unitary a {
+    color: unset;
+    text-decoration: none;
+}
+
 .depoiments_cards_unitary p {
     text-align: center;
     font-size: 14px;
-    padding: 1rem 2rem;
-    line-height: 1.2rem;
+    padding: 1rem 1rem;
+    line-height: 1.15rem;
+    margin-top: 0.3rem;
 }
 
 /* Footer */
@@ -634,12 +645,6 @@ a {
     #second, #fourth {
         position: relative;
         top: 40px;
-    }
-    
-    .avatar {
-        top: -60px;
-        width: 120px;
-        height: 120px;
     }
     
     /* Footer */

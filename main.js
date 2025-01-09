@@ -82,7 +82,7 @@ let items = document.querySelectorAll('.slider .item');
 let next = document.getElementById('next');
 let prev = document.getElementById('prev');
   
-let active = 0;
+let active = 1;
 function loadShow(){
     let stt = 0;
     items[active].style.transform = `none`;
