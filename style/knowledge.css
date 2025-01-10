@@ -1,0 +1,73 @@
+
+.knowledge__tittle {
+    text-align: center;
+}
+
+h2 {
+    font-size: 3.5rem;
+    font-weight: lighter;
+    padding-top: 4rem;
+}
+
+#subtittle {
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+#subtittle.dark {
+    color: var(--primeira-cor);
+}
+
+.knowledge__cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 200px;
+    background-color: var(--oitava-cor);
+    border-radius: 1.7rem;
+    padding: 1.1rem;
+    gap: 1.1rem;
+}
+
+.cards:hover {
+    scale: calc(1.1);
+    transition: 0.5s;
+}
+
+.simbols {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 58px;
+    height: 58px;
+    background-color: var(--nona-cor);
+    border-radius: 16px;
+}
+
+.cards h3 {
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.cards p {
+    text-align: center;
+}
+
+.cards.dark p {
+    color: var(--cor-principal);
+}
+
+#ts, #rea, #bs {
+    filter: blur(3px);
+}

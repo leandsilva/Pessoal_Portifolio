@@ -1,0 +1,26 @@
+
+footer {
+    display: block;
+    justify-items: center;
+    background-color: var(--decima-cor);
+}
+
+footer p {
+    text-align: center;
+    padding: 0.5rem 0 1.5rem 0;
+    width: 80%;
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1.2rem;
+    color: var(--primeira-cor);
+}
+
+footer img {
+    width: 30px;
+    height: 30px;
+    margin: 3rem 1rem 1rem 1rem;
+}
+
+a {
+    text-decoration: none;
+}

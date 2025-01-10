@@ -64,6 +64,8 @@ trilho.addEventListener('click', ()=>{
   tecnologiesUsed[8].classList.toggle('dark');
 })
 
+// Quando tiver mais projetos, incluir mais linhas
+
 trilho.addEventListener('click', ()=>{
   item[0].classList.toggle('dark');
   item[1].classList.toggle('dark');

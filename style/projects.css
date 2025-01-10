@@ -1,0 +1,142 @@
+
+.projects {
+    margin-top: 2.5rem;
+    background-color: var(--quinta-cor)
+}
+
+.projects h2 {
+    text-align: center;
+}
+
+/* Seção Projects - Slider */
+
+.slider {
+    position: relative;
+    margin-top: 4rem;
+    width: 100%;
+    height: 650px;
+    overflow: hidden;
+}
+
+.item {
+    position: absolute;
+    width: 325px;
+    height: 520px;
+    text-align: center;
+    background-color: var(--decima-cor);
+    border-radius: 10px;
+    padding: 20px;
+    transition: 0.5s;
+    left: 10px;
+    top: 0;
+    border: 1px solid var(--decima-primeira-cor);
+}
+
+.pages {
+    width: 100%;
+    height: 40%;
+    border-radius: 10px;
+    padding-bottom: 4rem;
+}
+
+.technologies_used {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    gap: 1rem;
+}
+
+.technologies_used_simbols {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+    background-image: linear-gradient(
+        to right,
+        #ff9a44,
+        #ef9d43,
+        #e75516
+      );
+      box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
+    border-radius: 50%;
+}
+
+.technologies_used_simbols.dark {
+    background-image: linear-gradient(
+      to right,
+      #667eea,
+      #6b8dd6,
+      #8e37d7
+    );
+    box-shadow: 0 4px 15px 0 #8e37d7;
+}
+
+.technologies {
+    scale: calc(-0.7);
+}
+
+.item h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primeira-cor);
+}
+
+.item.dark h3,
+.item.dark p {
+    font-weight: 600;
+    color: var(--cor-principal);
+}
+
+.item p {
+    font-size: 1rem;
+    padding-top: 0.4rem;
+    color: var(--primeira-cor);
+    line-height: 1.2rem;
+}
+
+.item.dark {
+    background-color: #f0eeee77;
+    
+}
+
+#next, #prev {
+    position: absolute;
+    top: 90%;
+    color: var(--decima-segunda-cor);
+    background-color: transparent;
+    border: none;
+    font-size: xxx-large;
+    font-family: monospace;
+    font-weight: bold;
+    left: 10%
+}
+
+#next{
+    left: unset;
+    right: 10%;
+}
+
+#next, #prev:hover {
+    cursor: pointer;
+}
+
+#final_text {
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: 4rem;
+}
+
+#final_text.dark {
+    color: var(--primeira-cor);
+}
+
+#git {
+    text-decoration: none;
+    color: inherit;
+}
+
+#git:hover {
+    font-size: larger;
+    transition: 0.5s;
+}

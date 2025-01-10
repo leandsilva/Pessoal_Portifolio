@@ -1,0 +1,119 @@
+
+.timeline {
+    font-size: 10px;
+    padding: 2.5rem 0;
+}
+
+.timeline p {
+    padding: 10px !important;
+}
+
+.timeline h2 {
+    text-align: center;
+    padding-bottom: 4rem;
+}
+
+.point {
+    min-width: 20px;
+    height: 20px;
+    background-color: var(--decima-segunda-cor);
+    border-radius: 100%;
+    z-index: 2;
+    border: 3px solid var(--nona-cor);
+    position: relative;
+    left: 1px;
+}
+
+.board {
+    position: relative;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.content h3 {
+    color: var(--primeira-cor);
+}
+
+strong {
+    font-weight: bold;
+}
+
+.board ul li {
+    margin-bottom: 50px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.board ul li .content {
+    width: 50%;
+    padding: 0 20px;
+}
+
+.board ul li:nth-child(odd) .content {
+    padding-left: 0;
+}
+
+.board ul li:nth-child(odd) .date {
+    padding-right: 0;
+}
+
+.board ul li:nth-child(even) .content {
+    padding-right: 0;
+}
+
+.board ul li:nth-child(even) .date {
+    padding-left: 0;
+}
+
+.board ul li .date {
+    width: 50%;
+    padding: 0 20px;
+    font-weight: normal;
+}
+
+.board ul li .date h4 {
+    background-color: var(--quarta-cor);
+    width: 100px;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.board ul li .content h3 {
+    padding: 10px 20px;
+    background-color: var(--decima-cor);
+    margin-bottom: 0;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.board ul li .content p {
+    padding: 10px 20px;
+    line-height: 1.2rem;
+    background-color: var(--oitava-cor);
+    box-shadow: 1px 1px 30px 0.5px var(--decima-cor);
+    margin-top: 0;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.board ul li:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.board ul li:nth-child(even) .date h4 {
+    float: right
+}
+
+.board::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 3px;
+    left: 50%;
+    background-color: var(--decima-segunda-cor);
+}

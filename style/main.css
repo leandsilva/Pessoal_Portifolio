@@ -1,0 +1,122 @@
+
+main {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 10% 10% 0 10%;
+    background: var(--quinta-cor);
+}
+
+#text {
+    text-align: center;
+    line-height: 1.2rem;
+}
+
+main h1 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+span {
+    color: var(--setima-cor);
+}
+
+span.dark {
+    color: var(--decima-quarta-cor);
+}
+
+br {
+    display: none;
+}
+
+#text.dark {
+    color: var(--primeira-cor);
+}
+
+main img {
+    width: 120%;
+    height: 120%;
+    position: relative;
+    left: -10%;
+}
+
+.buttons {
+    padding: 1.2rem;
+}
+
+#btn, #btn2 {
+    padding: 0.5rem 1rem;
+    width: 10rem;
+    margin: auto 2rem;
+    width: 160px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--primeira-cor);
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    background-image: linear-gradient(
+      to right,
+      #fc6076,
+      #ff9a44,
+      #ef9d43,
+      #e75516
+    );
+    box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
+}
+
+/* verificar se tem como unir dois IDs no hover */
+#btn:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+#btn2:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+#btn:focus {
+    outline: none;
+}
+
+#btn2:focus {
+    outline: none;
+}
+
+#btn.dark {
+    background-image: linear-gradient(
+      to right,
+      #667eea,
+      #764ba2,
+      #6b8dd6,
+      #8e37d7
+    );
+    box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+}
+
+#btn2.dark {
+    background-image: linear-gradient(
+      to right,
+      #667eea,
+      #764ba2,
+      #6b8dd6,
+      #8e37d7
+    );
+    box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+}
