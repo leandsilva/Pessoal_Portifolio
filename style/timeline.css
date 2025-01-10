@@ -16,12 +16,26 @@
 .point {
     min-width: 20px;
     height: 20px;
-    background-color: var(--decima-segunda-cor);
+    background-image: linear-gradient(
+        to bottom,
+        #fc6076,
+        #ff9a44,
+        #ef9d43
+      );
     border-radius: 100%;
     z-index: 2;
     border: 3px solid var(--nona-cor);
     position: relative;
     left: 1px;
+}
+
+.point.dark {
+    background-image: linear-gradient(
+      to bottom,
+      #667eea,
+      #6b8dd6,
+      #8e37d7
+    );
 }
 
 .board {
@@ -30,8 +44,13 @@
     width: 90%;
 }
 
+.content {
+    border-radius: 15px;
+}
+
 .content h3 {
-    color: var(--primeira-cor);
+    color: var(--cor-principal);
+    font-weight: bolder;
 }
 
 strong {
@@ -83,7 +102,7 @@ strong {
 
 .board ul li .content h3 {
     padding: 10px 20px;
-    background-color: var(--decima-cor);
+    background-color: var(--oitava-cor);
     margin-bottom: 0;
     text-align: center;
     border-top-left-radius: 10px;
@@ -94,7 +113,7 @@ strong {
     padding: 10px 20px;
     line-height: 1.2rem;
     background-color: var(--oitava-cor);
-    box-shadow: 1px 1px 30px 0.5px var(--decima-cor);
+    /* box-shadow: 1px 1px 30px 0.5px var(--decima-cor); */
     margin-top: 0;
     text-align: center;
     border-bottom-left-radius: 10px;

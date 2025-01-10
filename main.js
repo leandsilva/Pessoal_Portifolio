@@ -10,6 +10,7 @@ let text = document.getElementById('text'); //texto da main section
 let subtittle = document.getElementById('subtittle'); //subtítulo da seção de tecnologia
 let final = document.getElementById('final_text'); //texto final da seção de projetos
 let tecnologiesUsed = document.getElementsByClassName('technologies_used_simbols'); //símbolo das tecnologias na seção projetos
+let point = document.getElementsByClassName('point');
 let item = document.getElementsByClassName('item');
 
 trilho.addEventListener('click', ()=>(
@@ -76,6 +77,17 @@ trilho.addEventListener('click', ()=>{
   item[6].classList.toggle('dark');
   item[7].classList.toggle('dark');
   item[8].classList.toggle('dark');
+})
+
+trilho.addEventListener('click', ()=>{
+  point[0].classList.toggle('dark');
+  point[1].classList.toggle('dark');
+  point[2].classList.toggle('dark');
+  point[3].classList.toggle('dark');
+  point[4].classList.toggle('dark');
+  point[5].classList.toggle('dark');
+  point[6].classList.toggle('dark');
+  point[7].classList.toggle('dark');
 })
 
 // Slides dos Projetos
