@@ -68,6 +68,6 @@ h2 {
     color: var(--cor-principal);
 }
 
-#ts, #rea, #bs {
+#ts {
     filter: blur(3px);
 }
